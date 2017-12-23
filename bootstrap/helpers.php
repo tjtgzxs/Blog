@@ -20,9 +20,9 @@ function get_db_config(){
         return $db_config = [
             'connection' => env('DB_CONNECTION', 'mysql'),
             'host' => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'forge'),
-            'username'  => env('DB_USERNAME', 'forge'),
-            'password'  => env('DB_PASSWORD', ''),
+            'database'  => env('DB_DATABASE', 'sample'),
+            'username'  => env('DB_USERNAME', 'homestead'),
+            'password'  => env('DB_PASSWORD', 'homestead'),
         ];
     }
 
