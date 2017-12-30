@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\Models\User;
+
 class UsersTableSeeder extends Seeder
 {
     /**
@@ -18,6 +19,7 @@ class UsersTableSeeder extends Seeder
         $user->email = 'tjtgzxs@outlook.com';
         $user->password = bcrypt('1990lljxk');
         $user->is_admin=true;
+        $user->activated=true;
         $user->save();
     }
 }
